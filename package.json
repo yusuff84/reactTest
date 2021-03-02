@@ -3,13 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@inovua/reactdatagrid-community": "^4.0.25",
-    "@inovua/reactdatagrid-enterprise": "^4.0.25",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.3",
     "react": "^17.0.1",
-    "react-data-grid": "^7.0.0-canary.36",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.0"

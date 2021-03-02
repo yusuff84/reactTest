@@ -1,38 +1,9 @@
-import React, { useState, useCallback } from 'react'
+import logo from './logo.svg';
+import './App.css';
 
-import ReactDataGrid from '@inovua/reactdatagrid-community'
-import '@inovua/reactdatagrid-enterprise/index.css'
-
-const R = [
-  { id: 1, name: 'Абкаров Муслим', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
-  { id: 2, name: 'Бачаев Абдул-Рахман', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
-  { id: 3, name: 'Табалаев Муслим', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
-  { id: 4, name: 'Узиев Имран GURU PYTHON DEVELOPER', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
-  { id: 5, name: 'Магомадов Джабраил', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
-  { id: 6, name: 'Аьнди', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
-  { id: 7, name: 'Турпал', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
-  { id: 8, name: 'Муслим', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
-  { id: 9, name: 'Аюб', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
-  { id: 10, name: 'Юсуп', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
-  { id: 11, name: 'Ибрагимов Юсуп', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
-  { id: 12, name: 'Шамиль', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
-  { id: 13, name: 'Милана', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
-  { id: 14, name: 'Фатима', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
-  { id: 15, name: 'Иса', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
-  { id: 16, name: 'Сурхо', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
-  { id: 17, name: 'Марха', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
-  
-]
-
- var month="МАРТ";
- var teacher='ИБРАГИМОВ ЮСУП МИНКАИЛОВИЧ "МОБИЛЬНАЯ РАЗРАБОТКА" ГРУППА N1'
- 
-  
-
-const gridStyle = { minHeight:window.screen.height}
-
-const EditorFeedback = (props) => {
+function App() {
   return (
+<<<<<<< HEAD
     <div style={{ margin: '10px 0px'}}>
       Current value: {props.value}.
     </div>
@@ -93,10 +64,25 @@ const App = () => {
         columns={columns}
         dataSource={dataSource}
       />
+=======
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+>>>>>>> parent of 3e3893d (firstCommit)
     </div>
   );
-
 }
 
-export default () => <App />
-// export default App;
+export default App;
