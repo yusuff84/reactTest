@@ -39,6 +39,7 @@ const EditorFeedback = (props) => {
   )
 }
 
+
 const columns = [
   { name: 'id', header: '№п/п', defaultVisible: true, defaultWidth: 30 },
   { name: 'name', header: 'ФИО', defaultWidth: 250 },
