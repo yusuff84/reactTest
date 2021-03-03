@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-<<<<<<< HEAD
+
     <div style={{ margin: '10px 0px'}}>
       Current value: {props.value}.
     </div>
@@ -64,7 +64,7 @@ const App = () => {
         columns={columns}
         dataSource={dataSource}
       />
-=======
+
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -80,7 +80,6 @@ const App = () => {
           Learn React
         </a>
       </header>
->>>>>>> parent of 3e3893d (firstCommit)
     </div>
   );
 }
