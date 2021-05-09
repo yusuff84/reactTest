@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from 'react'
-<<<<<<< HEAD
 import ReactDataGrid from '@inovua/reactdatagrid-community'
 import '@inovua/reactdatagrid-community/index.css'
 
@@ -21,13 +20,6 @@ import '@inovua/reactdatagrid-community/index.css'
 
 
 const data = [
-=======
-
-import ReactDataGrid from '@inovua/reactdatagrid-community'
-import '@inovua/reactdatagrid-enterprise/index.css'
-
-const R = [
->>>>>>> 243379083ce90bb6125d8dfbdcd5df5b485e3362
   { id: 1, name: 'Абкаров Муслим', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
   { id: 2, name: 'Бачаев Абдул-Рахман', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
   { id: 3, name: 'Табалаев Муслим', day_1: 35, day_2: 45, day_3: 35, day_4: 45, day_5: 65, day_6: 45, day_7: 15, day_8: 4, day_9: 35, day_10: 45, day_11: 35,  },
@@ -48,7 +40,6 @@ const R = [
   
 ]
 
-<<<<<<< HEAD
 function postJson(data,url)//типа метод для отправки json
 {
   let http = new XMLHttpRequest();
@@ -63,18 +54,12 @@ function postJson(data,url)//типа метод для отправки json
 }
 
 
-=======
->>>>>>> 243379083ce90bb6125d8dfbdcd5df5b485e3362
  var month="МАРТ";
  var teacher='ИБРАГИМОВ ЮСУП МИНКАИЛОВИЧ "МОБИЛЬНАЯ РАЗРАБОТКА" ГРУППА N1'
  
   
 
-<<<<<<< HEAD
 const gridStyle = { minHeight:700}//размер таблицы
-=======
-const gridStyle = { minHeight:window.screen.height}
->>>>>>> 243379083ce90bb6125d8dfbdcd5df5b485e3362
 
 const EditorFeedback = (props) => {
   return (
@@ -83,11 +68,7 @@ const EditorFeedback = (props) => {
     </div>
   )
 }
-<<<<<<< HEAD
  //сами столбцы
-=======
-
->>>>>>> 243379083ce90bb6125d8dfbdcd5df5b485e3362
 const columns = [
   { name: 'id', header: '№п/п', defaultVisible: true, defaultWidth: 30 },
   { name: 'name', header: 'ФИО', defaultWidth: 250 },
@@ -161,10 +142,7 @@ const App = () => {
 
         
       />
-<<<<<<< HEAD
       <p>Currently active cell: {(JSON.stringify(activeCell))}.</p>
-=======
->>>>>>> 243379083ce90bb6125d8dfbdcd5df5b485e3362
     </div>
   );
 
